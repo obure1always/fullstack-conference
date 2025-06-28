@@ -2,13 +2,13 @@
 
 A responsive conference website built with Bootstrap 5, featuring modern design, interactive components, and a complete registration system.
 
-## 🚀 Quick Start
+##  Quick Start
 
 1. **Clone or download** the project files
 2. **Open** `index.html` in your web browser
 3. **No build process required** - it's ready to use!
 
-## ✨ Features
+##  Features
 
 - **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
 - **Bootstrap 5**: Modern UI components and utilities
@@ -19,7 +19,7 @@ A responsive conference website built with Bootstrap 5, featuring modern design,
 - **Registration Modal**: Complete registration form with validation
 - **Modern UI**: Clean, professional design with hover animations
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - **HTML5**: Semantic markup structure
 - **Bootstrap 5.3.0**: CSS framework for responsive design
@@ -27,7 +27,7 @@ A responsive conference website built with Bootstrap 5, featuring modern design,
 - **Vanilla JavaScript**: Form handling and modal interactions
 - **CSS3**: Custom styling and animations
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 fullstack-conference/
