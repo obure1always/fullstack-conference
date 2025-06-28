@@ -342,9 +342,9 @@
     <div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
-                <div class="modal-header bg-warning">
+                <div class="modal-header" style="background-color: #ffc107;">
                     <h5 class="modal-title fw-bold" id="registrationModalLabel">
-                        <i class="bi bi-ticket-perforated me-2"></i>Register for FullStack Conference 2025
+                        <i class="bi bi-clipboard-check me-2"></i>Conference Registration
                     </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
@@ -352,69 +352,92 @@
                     <form id="registrationForm">
                         <div class="row g-3">
                             <div class="col-md-6">
-                                <label for="firstName" class="form-label fw-semibold">First Name *</label>
-                                <input type="text" class="form-control" id="firstName" required>
+                                <label for="fullName" class="form-label fw-semibold">Full Name</label>
+                                <input type="text" class="form-control" id="fullName" placeholder="Enter your name" required>
                             </div>
                             <div class="col-md-6">
-                                <label for="lastName" class="form-label fw-semibold">Last Name *</label>
-                                <input type="text" class="form-control" id="lastName" required>
+                                <label for="email" class="form-label fw-semibold">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="your@email.com" required>
                             </div>
                             <div class="col-12">
-                                <label for="email" class="form-label fw-semibold">Email Address *</label>
-                                <input type="email" class="form-control" id="email" required>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="company" class="form-label fw-semibold">Company</label>
-                                <input type="text" class="form-control" id="company">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="jobTitle" class="form-label fw-semibold">Job Title</label>
-                                <input type="text" class="form-control" id="jobTitle">
-                            </div>
-                            <div class="col-12">
-                                <label for="experience" class="form-label fw-semibold">Experience Level *</label>
-                                <select class="form-select" id="experience" required>
-                                    <option value="">Choose your experience level</option>
-                                    <option value="beginner">Beginner (0-2 years)</option>
-                                    <option value="intermediate">Intermediate (3-5 years)</option>
-                                    <option value="advanced">Advanced (5+ years)</option>
+                                <label for="jobRole" class="form-label fw-semibold">Job Role</label>
+                                <select class="form-select" id="jobRole" required>
+                                    <option value="">Select your role</option>
+                                    <option>Frontend Developer</option>
+                                    <option>Backend Developer</option>
+                                    <option>Full Stack Developer</option>
+                                    <option>DevOps Engineer</option>
+                                    <option>Designer</option>
+                                    <option>Student</option>
+                                    <option>Other</option>
                                 </select>
                             </div>
                             <div class="col-12">
-                                <label for="interests" class="form-label fw-semibold">Areas of Interest</label>
+                                <label class="form-label fw-semibold">Topics of Interest</label>
                                 <div class="row g-2">
-                                    <div class="col-md-4">
+                                    <div class="col-md-6">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="frontend" value="frontend">
-                                            <label class="form-check-label" for="frontend">Frontend Development</label>
+                                            <input class="form-check-input" type="checkbox" id="frontend" value="React & Frontend">
+                                            <label class="form-check-label" for="frontend">React & Frontend</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="backend" value="Node.js & Backend">
+                                            <label class="form-check-label" for="backend">Node.js & Backend</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="database" value="Database & GraphQL">
+                                            <label class="form-check-label" for="database">Database & GraphQL</label>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-6">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="backend" value="backend">
-                                            <label class="form-check-label" for="backend">Backend Development</label>
+                                            <input class="form-check-input" type="checkbox" id="devops" value="DevOps & Cloud">
+                                            <label class="form-check-label" for="devops">DevOps & Cloud</label>
                                         </div>
-                                    </div>
-                                    <div class="col-md-4">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="devops" value="devops">
-                                            <label class="form-check-label" for="devops">DevOps</label>
+                                            <input class="form-check-input" type="checkbox" id="mobile" value="Mobile Development">
+                                            <label class="form-check-label" for="mobile">Mobile Development</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="ai" value="AI & Machine Learning">
+                                            <label class="form-check-label" for="ai">AI & Machine Learning</label>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <hr class="my-4">
                             <div class="col-12">
-                                <label for="message" class="form-label fw-semibold">Additional Comments</label>
-                                <textarea class="form-control" id="message" rows="3" placeholder="Tell us what you hope to learn..."></textarea>
+                                <h6 class="fw-bold mb-3">Payment Information</h6>
+                                <div class="row g-3 align-items-end">
+                                    <div class="col-md-8">
+                                        <label for="cardNumber" class="form-label">Card Number</label>
+                                        <input type="text" class="form-control" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19" required>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="cvv" class="form-label">CVV</label>
+                                        <input type="text" class="form-control" id="cvv" placeholder="123" maxlength="4" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="expDate" class="form-label">Expiration Date</label>
+                                        <input type="text" class="form-control" id="expDate" placeholder="MM/YY" maxlength="5" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="zipCode" class="form-label">Zip Code</label>
+                                        <input type="text" class="form-control" id="zipCode" placeholder="12345" maxlength="10" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-4 d-flex justify-content-between align-items-center">
+                                <span class="fw-bold fs-5">Total Amount:</span>
+                                <span class="fw-bold fs-3" style="color: #ffc107;">$299</span>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <button type="submit" class="btn btn-dark btn-lg w-100 rounded-pill fw-bold">
+                                    <i class="bi bi-check2-circle me-2"></i>Complete Registration
+                                </button>
                             </div>
                         </div>
                     </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                    <button type="submit" form="registrationForm" class="btn btn-warning fw-bold">
-                        <i class="bi bi-check-circle me-2"></i>Register Now
-                    </button>
                 </div>
             </div>
         </div>
