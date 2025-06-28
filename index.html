@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Conference 2025</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        .min-vh-75 {
+            min-height: 75vh;
+        }
+        .speaker-card:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+        .schedule-item:hover {
+            background-color: #f8f9fa;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#">
+                <i class="bi bi-code-slash text-warning me-2"></i>FullStack<span class="text-warning">Conf</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="#speakers">Speakers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="#schedule">Schedule</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient" style="background: linear-gradient(135deg, #ffc107, #fd7e14);">
+        <div class="container py-5">
+            <div class="row min-vh-75 align-items-center">
+                <div class="col-lg-8 mx-auto text-center text-white">
+                    <h1 class="display-2 fw-bold mb-4">Full Stack Conference 2025</h1>
+                    <p class="lead fs-3 mb-5 fw-light">Master the Complete Web Development Stack</p>
+                    <div class="d-flex flex-column flex-md-row gap-3 justify-content-center">
+                        <button class="btn btn-dark btn-lg rounded-pill shadow-lg px-5 py-3 fw-bold" data-bs-toggle="modal" data-bs-target="#registrationModal">
+                            <i class="bi bi-ticket-perforated me-2"></i>Register Now
+                        </button>
+                        <a href="#speakers" class="btn btn-outline-dark btn-lg rounded-pill shadow px-5 py-3 fw-bold">
+                            <i class="bi bi-people me-2"></i>Meet Speakers
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-4 fw-bold mb-4">About the Conference</h2>
+                    <p class="lead mb-5">Join us for the most comprehensive full-stack development conference of 2025. Learn from industry experts, network with peers, and discover the latest technologies shaping the future of web development.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-laptop text-warning display-4 mb-3"></i>
+                            <h5 class="card-title fw-bold">Frontend Mastery</h5>
+                            <p class="card-text">Learn modern JavaScript frameworks, CSS techniques, and responsive design principles.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-server text-warning display-4 mb-3"></i>
+                            <h5 class="card-title fw-bold">Backend Development</h5>
+                            <p class="card-text">Master server-side programming, databases, APIs, and cloud deployment strategies.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-gear text-warning display-4 mb-3"></i>
+                            <h5 class="card-title fw-bold">DevOps & Tools</h5>
+                            <p class="card-text">Explore CI/CD pipelines, containerization, monitoring, and development workflows.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section id="speakers" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-4 fw-bold mb-4">Featured Speakers</h2>
+                    <p class="lead mb-5">Learn from industry leaders and technical experts who are shaping the future of web development.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card speaker-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="bg-warning rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
+                                <i class="bi bi-person text-white display-5"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Sarah Johnson</h5>
+                            <p class="text-muted mb-3">Senior Frontend Engineer at TechCorp</p>
+                            <p class="card-text">Expert in React, Vue.js, and modern CSS frameworks. Author of "Modern Frontend Architecture".</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <span class="badge bg-primary">React</span>
+                                <span class="badge bg-success">Vue.js</span>
+                                <span class="badge bg-info">CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card speaker-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="bg-warning rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
+                                <i class="bi bi-person text-white display-5"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Michael Chen</h5>
+                            <p class="text-muted mb-3">Backend Architect at DataFlow</p>
+                            <p class="card-text">Specialist in Node.js, Python, and microservices architecture. Open source contributor.</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <span class="badge bg-primary">Node.js</span>
+                                <span class="badge bg-success">Python</span>
+                                <span class="badge bg-info">Microservices</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card speaker-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="bg-warning rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
+                                <i class="bi bi-person text-white display-5"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Emily Rodriguez</h5>
+                            <p class="text-muted mb-3">DevOps Engineer at CloudScale</p>
+                            <p class="card-text">Expert in Docker, Kubernetes, and AWS. Passionate about automation and infrastructure as code.</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <span class="badge bg-primary">Docker</span>
+                                <span class="badge bg-success">Kubernetes</span>
+                                <span class="badge bg-info">AWS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card speaker-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="bg-warning rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
+                                <i class="bi bi-person text-white display-5"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">David Kim</h5>
+                            <p class="text-muted mb-3">Full Stack Developer at StartupHub</p>
+                            <p class="card-text">Full-stack specialist with expertise in MERN stack and modern development practices.</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <span class="badge bg-primary">MongoDB</span>
+                                <span class="badge bg-success">Express</span>
+                                <span class="badge bg-info">React</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card speaker-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="bg-warning rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
+                                <i class="bi bi-person text-white display-5"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Lisa Thompson</h5>
+                            <p class="text-muted mb-3">UX/UI Designer at DesignLab</p>
+                            <p class="card-text">User experience expert focusing on accessibility, design systems, and user-centered design.</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <span class="badge bg-primary">UX Design</span>
+                                <span class="badge bg-success">Accessibility</span>
+                                <span class="badge bg-info">Design Systems</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card speaker-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="bg-warning rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
+                                <i class="bi bi-person text-white display-5"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Alex Morgan</h5>
+                            <p class="text-muted mb-3">Security Engineer at SecureNet</p>
+                            <p class="card-text">Cybersecurity expert specializing in web application security and secure coding practices.</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <span class="badge bg-primary">Security</span>
+                                <span class="badge bg-success">OWASP</span>
+                                <span class="badge bg-info">Penetration Testing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-4 fw-bold mb-4">Conference Schedule</h2>
+                    <p class="lead mb-5">Three days of intensive learning, networking, and hands-on workshops.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="list-group list-group-flush">
+                        <div class="list-group-item schedule-item border-0 bg-transparent p-4">
+                            <div class="row align-items-center">
+                                <div class="col-md-3">
+                                    <h5 class="fw-bold text-warning">Day 1 - Frontend Focus</h5>
+                                    <p class="text-muted mb-0">March 15, 2025</p>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="d-flex flex-column flex-md-row gap-3">
+                                        <div class="flex-fill">
+                                            <h6 class="fw-bold">9:00 AM - Keynote</h6>
+                                            <p class="mb-2">The Future of Frontend Development</p>
+                                            <small class="text-muted">Sarah Johnson</small>
+                                        </div>
+                                        <div class="flex-fill">
+                                            <h6 class="fw-bold">2:00 PM - Workshop</h6>
+                                            <p class="mb-2">Building Scalable React Applications</p>
+                                            <small class="text-muted">David Kim</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-group-item schedule-item border-0 bg-transparent p-4">
+                            <div class="row align-items-center">
+                                <div class="col-md-3">
+                                    <h5 class="fw-bold text-warning">Day 2 - Backend & APIs</h5>
+                                    <p class="text-muted mb-0">March 16, 2025</p>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="d-flex flex-column flex-md-row gap-3">
+                                        <div class="flex-fill">
+                                            <h6 class="fw-bold">9:00 AM - Session</h6>
+                                            <p class="mb-2">Microservices Architecture Patterns</p>
+                                            <small class="text-muted">Michael Chen</small>
+                                        </div>
+                                        <div class="flex-fill">
+                                            <h6 class="fw-bold">2:00 PM - Workshop</h6>
+                                            <p class="mb-2">API Design Best Practices</p>
+                                            <small class="text-muted">Emily Rodriguez</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-group-item schedule-item border-0 bg-transparent p-4">
+                            <div class="row align-items-center">
+                                <div class="col-md-3">
+                                    <h5 class="fw-bold text-warning">Day 3 - DevOps & Security</h5>
+                                    <p class="text-muted mb-0">March 17, 2025</p>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="d-flex flex-column flex-md-row gap-3">
+                                        <div class="flex-fill">
+                                            <h6 class="fw-bold">9:00 AM - Session</h6>
+                                            <p class="mb-2">Container Orchestration with Kubernetes</p>
+                                            <small class="text-muted">Emily Rodriguez</small>
+                                        </div>
+                                        <div class="flex-fill">
+                                            <h6 class="fw-bold">2:00 PM - Workshop</h6>
+                                            <p class="mb-2">Web Application Security</p>
+                                            <small class="text-muted">Alex Morgan</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="fw-bold mb-3">
+                        <i class="bi bi-code-slash text-warning me-2"></i>FullStack<span class="text-warning">Conf</span>
+                    </h5>
+                    <p class="mb-0">The premier full-stack development conference of 2025.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-2">Contact us: info@fullstackconf.com</p>
+                    <div class="d-flex gap-3 justify-content-md-end">
+                        <a href="#" class="text-white"><i class="bi bi-twitter fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-linkedin fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-github fs-5"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-3">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 FullStack Conference. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Registration Modal -->
+    <div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-warning">
+                    <h5 class="modal-title fw-bold" id="registrationModalLabel">
+                        <i class="bi bi-ticket-perforated me-2"></i>Register for FullStack Conference 2025
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="registrationForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="firstName" class="form-label fw-semibold">First Name *</label>
+                                <input type="text" class="form-control" id="firstName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="lastName" class="form-label fw-semibold">Last Name *</label>
+                                <input type="text" class="form-control" id="lastName" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="email" class="form-label fw-semibold">Email Address *</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="company" class="form-label fw-semibold">Company</label>
+                                <input type="text" class="form-control" id="company">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="jobTitle" class="form-label fw-semibold">Job Title</label>
+                                <input type="text" class="form-control" id="jobTitle">
+                            </div>
+                            <div class="col-12">
+                                <label for="experience" class="form-label fw-semibold">Experience Level *</label>
+                                <select class="form-select" id="experience" required>
+                                    <option value="">Choose your experience level</option>
+                                    <option value="beginner">Beginner (0-2 years)</option>
+                                    <option value="intermediate">Intermediate (3-5 years)</option>
+                                    <option value="advanced">Advanced (5+ years)</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="interests" class="form-label fw-semibold">Areas of Interest</label>
+                                <div class="row g-2">
+                                    <div class="col-md-4">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="frontend" value="frontend">
+                                            <label class="form-check-label" for="frontend">Frontend Development</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="backend" value="backend">
+                                            <label class="form-check-label" for="backend">Backend Development</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="devops" value="devops">
+                                            <label class="form-check-label" for="devops">DevOps</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label fw-semibold">Additional Comments</label>
+                                <textarea class="form-control" id="message" rows="3" placeholder="Tell us what you hope to learn..."></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" form="registrationForm" class="btn btn-warning fw-bold">
+                        <i class="bi bi-check-circle me-2"></i>Register Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Form Submission Script -->
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Simulate form submission
+            alert('Thank you for registering! We will contact you soon with conference details.');
+            
+            // Close modal
+            const modal = bootstrap.Modal.getInstance(document.getElementById('registrationModal'));
+            modal.hide();
+            
+            // Reset form
+            this.reset();
+        });
+    </script>
+</body>
+</html> 
